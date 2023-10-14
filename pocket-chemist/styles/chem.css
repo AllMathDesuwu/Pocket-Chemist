@@ -1,0 +1,119 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #6A8587;
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #ced9db;
+  align-items: center;
+}
+
+.header{
+  background: #009721;
+  width: 100%;
+  color: white;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  background: #b7ffff;
+}
+
+.nav-menu{
+  background-color:#b7ffff;
+}
+
+.spacer{
+  width: 100%;
+  height: 20%;
+  background: #ced9db;
+}
+
+.main{
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  background: #ced9db;
+}
+
+.main > form{
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+
+.input-box{
+  width: 75%;
+  background: #edf9fc;
+  border: none;
+  font-size: 1.5em;
+  height: 2.5em;
+}
+
+.submit-container{
+  display: flex;
+  justify-content: center;
+  height: 20%;
+}
+
+.submit{
+  height: 100%;
+  width: 40%;
+  background: #00BF2A;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit p{
+  margin: 0;
+}
+
+.submit:hover{
+  background: #01e633;
+  cursor: pointer;
+}
+
+.submit p{
+  color: black;
+}
+
+.formula-display{
+  width: 100%;
+  font-size: 1.1em;
+  background: #edf9fc;
+}
+
+.output-box{
+  width: 100%;
+  font-size: 1.1em;
+  background: #edf9fc;
+}
+
+.output-box h3, .formula-display h3, .input-box, .submit{
+  font-family: 'Input mono', input, monospace;
+}

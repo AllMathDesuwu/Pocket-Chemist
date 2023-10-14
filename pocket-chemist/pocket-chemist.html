@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pocket Chemist</title>
+  <meta charset = 'utf-8'>
+  <meta name= "viewport" content= "width=device-width, initial-scale=1">
+  <link rel= "stylesheet" href= "https://www.w3schools.com/w3css/4/w3.css">
+  <link rel = 'stylesheet' href = 'styles/chem.css'>
+</head>
+<body>
+  <div class = 'header'>POCKET CHEMIST</div>
+  <div class = flex-container>
+    <ul class="nav nav-tabs nav-menu">
+      <li class="active"><a href="#">Equation Balancer</a></li>
+      <li><a href="#">Redox Balancer</a></li>
+      <li><a href="#">Generic Equilibrium</a></li>
+      <li><a href="#">Acid/Base Reactions</a></li>
+      <li><a href="buffer.html">Buffer Systems</a></li>
+    </ul>
+  </div>
+  <div class = 'spacer'></div>
+  <div class = 'main'>
+    <form>
+      <input type = 'text' class = 'input-box' value = '' placeholder = 'Type the equation here'></input>
+    </form>
+    <div class = 'formula-display'></div>
+    <div class = 'submit-container'>
+      <div class = 'submit'><p>CALCULATE</p></div>
+    </div>
+    <div class = 'output-box'></div>
+  </div>
+  <div class = 'spacer'></div>
+
+  <script src = 'scripts/matrix.js'></script>
+  <script src = 'scripts/parseChem.js'></script>
+  <script src = 'scripts/formatChem.js'></script>
+  <script src = 'scripts/balance.js'></script>
+
+  <!--Bootstrap stuff-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+</body>
+</html>

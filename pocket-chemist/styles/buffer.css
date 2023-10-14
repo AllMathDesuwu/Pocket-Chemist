@@ -1,0 +1,23 @@
+.main{
+    flex-grow: 0;
+    height: 100%;
+    align-content: center;
+    flex-direction: column;
+}
+
+.main > form{
+    display: flex;
+    justify-content: space-around;
+}
+
+.submit-container{
+    height: 10%;
+    width: 100%;
+    position: relative;
+}
+
+.submit{
+    width: 20%;
+    position: relative;
+    transform: translate(0, -250%);
+}

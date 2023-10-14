@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pocket Chemist</title>
+    <meta charset = 'utf-8'>
+    <meta name= "viewport" content= "width=device-width, initial-scale=1">
+    <link rel= "stylesheet" href= "https://www.w3schools.com/w3css/4/w3.css">
+    <link rel = 'stylesheet' href = 'styles/chem.css'>
+    <link rel = 'stylesheet' href = 'styles/buffer.css'>
+</head>
+<body>
+    <div class = 'header'>POCKET CHEMIST</div>
+    <div class = flex-container>
+    <ul class="nav nav-tabs nav-menu">
+      <li><a href="pocket-chemist.html">Equation Balancer</a></li>
+      <li><a href="#">Redox Balancer</a></li>
+      <li><a href="#">Generic Equilibrium</a></li>
+      <li><a href="#">Acid/Base Reactions</a></li>
+      <li class="active"><a href="#">Buffer Systems</a></li>
+    </ul>
+    </div>
+    <div class = 'main'>
+        <form name = 'bufferForm'>
+            <div>
+              <label for = 'pH'>pH:</label>
+              <input type = 'text' name = 'pH'>
+            </div>
+            <div>
+                <select name = 'Kb_Ka'>
+                <option value = 'Ka'>K<sub>a</sub></option>
+                <option value = 'Kb'>K<sub>b</sub></option>
+                </select>
+                <label for = 'eq_const'>:</label>
+                <input type = 'text' name = 'eq_const'>
+            </div>
+            <div>
+                <label for = 'base_conc'>[base]:</label>
+                <input type = 'text' name = 'base_conc'>
+                <label for = 'acid_conc'>[acid]:</label>
+                <input type = 'text' name = 'acid_conc'>
+            </div>            
+        </form>
+        <div class = 'submit-container'>
+            <div class = 'submit'><p>CALCULATE</p></div>
+        </div>
+    </div>
+
+    <script src = 'scripts/parsePow.js'></script>
+    <script src = 'scripts/buffer.js'></script>
+
+    <!--Bootstrap stuff-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+</body>
+</html>
